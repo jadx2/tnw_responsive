@@ -35,12 +35,12 @@ li {
 /* NavBar */
 
 .nav-top {
+  display: none;
   background: #131313;
   font-size: 7px;
   font-weight: 500;
   line-height: 18px;
   max-height: 32px;
-  position: relative;
   z-index: 2;
   padding: 0 5px;
 }
@@ -58,6 +58,8 @@ li {
 }
 
 .nav-bottom {
+  position: sticky;
+  top: 0;
   line-height: 2;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
@@ -103,9 +105,14 @@ li {
   display: block;
 }
 
+.middle-nav {
+  display: none;
+}
+
 .nav-right {
   border-left: 1px solid #aaa;
 }
+
 .nav-right i {
   padding: 4px;
   font-size: 10px;
