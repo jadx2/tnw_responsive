@@ -63,7 +63,7 @@ li {
 }
 .logo {
   display: block;
-  background-color: #000;
+  background-color: #131313;
   width: 60px;
   text-align: center;
 }
@@ -71,6 +71,36 @@ li {
 .logo img {
   width: 50px;
   vertical-align: middle;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  background: #131313;
+  font-size: 7px;
+  font-weight: 500;
+  line-height: 18px;
+  width: 60px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .nav-right {
