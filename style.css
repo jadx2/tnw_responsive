@@ -32,6 +32,10 @@ li {
   flex-wrap: wrap;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 /* NavBar */
 
 .nav-top {
@@ -67,6 +71,7 @@ li {
   display: block;
   background-color: #131313;
   width: 60px;
+  height: 100%;
   text-align: center;
 }
 
@@ -110,13 +115,34 @@ li {
 }
 
 .nav-right {
-  border-left: 1px solid #aaa;
+  display: flex;
+}
+.nav-right a {
+  display: inline-block;
+  width: 100%;
+  border-left: 1px solid #eee;
 }
 
 .nav-right i {
-  padding: 4px;
-  font-size: 10px;
+  font-size: 13px;
+  padding: 10px;
 }
+
+.fa-bars {
+  color: #f42;
+}
+
+/* Main */
+
+.container {
+  padding: 0 15px;
+}
+
+main {
+  padding: 8px;
+}
+
+/*Cover section*/
 
 .cover {
   position: relative;
@@ -127,7 +153,12 @@ li {
 }
 
 .cover:hover {
-  background: linear-gradient(to right bottom, rgba(247, 2, 2, 0), rgb(255, 255, 255),40%);
+  background: linear-gradient(
+    to right bottom,
+    rgba(247, 2, 2, 0),
+    rgb(255, 255, 255),
+    40%
+  );
 }
 
 .cover-1 {
@@ -159,7 +190,11 @@ li {
   height: 100%;
   position: absolute;
   top: 0;
-  background: linear-gradient(to right bottom, rgba(247, 2, 2, 0), rgb(0, 0, 0));
+  background: linear-gradient(
+    to right bottom,
+    rgba(247, 2, 2, 0),
+    rgb(0, 0, 0)
+  );
 }
 
 .gradient2 {
@@ -170,14 +205,26 @@ li {
 }
 
 .cover:hover .gradient2 {
-  background: linear-gradient(to top left, rgba(136, 122, 122, 0), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(
+    to top left,
+    rgba(136, 122, 122, 0),
+    rgba(255, 255, 255, 0.3)
+  );
 }
 
-.cover-info{
+.cover-info {
   position: absolute;
   color: #fff;
   bottom: 0;
   padding: 7px;
+}
+
+.bottom {
+  justify-content: start;
+}
+
+.bottom li {
+  margin-right: 10px;
 }
 
 .small {
@@ -185,13 +232,14 @@ li {
   color: #aaa;
 }
 
-main {
-  padding: 8px;
-}
-
 .heading {
   font-weight: 900;
   color: #f76301;
+  line-height: 2.1;
+}
+
+.heading a {
+  color: inherit;
 }
 
 .news {
@@ -213,15 +261,15 @@ main {
 
 .funding-imgs {
   display: flex;
-  background-color: rgba(255,68,34,.08);
+  background-color: rgba(255, 68, 34, 0.08);
 }
 
-.funding-imgs h5{
+.funding-imgs h5 {
   padding-top: 4px;
   padding-left: 25px;
 }
 
-.funding-imgs p{
+.funding-imgs p {
   padding-top: 4px;
   padding-left: 8px;
 }
@@ -248,7 +296,7 @@ main {
   background-color: rgba(255, 102, 75, 0.05);
   padding: 12px;
 }
-.last-founding-card ul :nth-child(2){
+.last-founding-card ul :nth-child(2) {
   padding-bottom: 7px;
 }
 
@@ -270,7 +318,11 @@ main {
 .middle-card {
   padding-left: 5px;
   display: flex;
-  background-color: rgba(255,68,34,.08);
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.most-popular-card {
+  padding-top: 8px;
 }
 
 .middle-card :nth-child(2) img {
@@ -298,16 +350,13 @@ main {
   border-bottom: #aaa solid 1px;
 }
 
-.most-popular-card {
-  margin-top: 35px;
-}
-
 .deals-card {
   padding-left: 5px;
   display: flex;
 }
 
-.deals-card p , .deals-card h4{
+.deals-card p,
+.deals-card h4 {
   padding-left: 5px;
 }
 
@@ -316,6 +365,7 @@ main {
   height: 70px;
 }
 
+/* Footer */
 [class*="footer"] {
   display: flex;
   padding: 30px;
@@ -330,6 +380,7 @@ main {
 
 .top-foot {
   background-color: #131313;
+  font-size: 10px;
 }
 
 .footer-social i {
@@ -340,8 +391,83 @@ main {
 
 .bottom-footer {
   background-color: #000000;
+  text-align: center;
 }
 
 .bottom-footer img {
   max-width: 40px;
 }
+
+/* Media Querys */
+
+@media (min-width: 768px) {
+  .nav-top {
+    display: block;
+    padding-left: 60px;
+  }
+
+  .nav-top .right {
+    display: none;
+  }
+
+  .middle-nav {
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+  }
+
+  .middle-nav li {
+    margin-left: 5px;
+    color: #aaa;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .left {
+    justify-content: start;
+  }
+
+  .news {
+    flex-direction: column;
+    width: 33%;
+    padding: 8px;
+  }
+
+  .news-imgs {
+    height: 130px;
+  }
+
+  .news-imgs img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .last-founding-card {
+    width: 31%;
+  }
+
+  .most-popular-card {
+    width: 48%;
+  }
+
+  .deals-card {
+    flex-direction: column;
+    width: 32%;
+  }
+
+  .deals-card:nth-child(1) {
+    height: 130px;
+  }
+
+  .deals-card :nth-child(1) img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .heading {
+    align-items: end;
+  }
+}
+
