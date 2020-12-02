@@ -23,11 +23,11 @@ Built with CSS responsive techniques as "Flex, Grid, MediaQueries"
 
 👤 **Mohammed Atef**
 
-- GitHub: [@MohammedAtef](https://github.com/Mohamed-js)
+- GitHub: [Mohammed Atef](https://github.com/Mohamed-js)
 
 👤 **Jaim Delmar**
 
-- GitHub: [@JaimDelmar](https://github.com/jaimdedan)
+- GitHub: [Jaim Delmar](https://github.com/jaimdedan)
 
 ## 🤝 Contributing
 
