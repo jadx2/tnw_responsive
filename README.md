@@ -19,24 +19,19 @@ Built with CSS responsive techniques as "Flex, Grid, MediaQueries"
 
 [Live Demo Link](https://jaimdedan.github.io/tnw_responsive/)
 
-
-
 ## Authors
 
 👤 **Mohammed Atef**
 
 - GitHub: [@MohammedAtef](https://github.com/Mohamed-js)
 
-
 👤 **Jaim Delmar**
 
 - GitHub: [@JaimDelmar](https://github.com/jaimdedan)
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
 
 ## Show your support
 
@@ -44,8 +39,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-
+Thanks for the both parties involved in the development of this project.
