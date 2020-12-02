@@ -188,7 +188,8 @@ main {
 }
 
 .cover:hover {
-  background: linear-gradient(
+  background: 
+    linear-gradient(
     to right bottom,
     rgba(247, 2, 2, 0),
     rgba(255, 255, 255, 0.4)
@@ -224,7 +225,8 @@ main {
   height: 100%;
   position: absolute;
   top: 0;
-  background: linear-gradient(
+  background: 
+    linear-gradient(
     to right bottom,
     rgba(247, 2, 2, 0),
     rgb(0, 0, 0)
@@ -239,7 +241,8 @@ main {
 }
 
 .cover:hover .gradient2 {
-  background: linear-gradient(
+  background: 
+    linear-gradient(
     to top left,
     rgba(136, 122, 122, 0.1),
     rgba(255, 255, 255, 0.3)
@@ -583,7 +586,8 @@ main {
     height: 100%;
     position: absolute;
     top: 0;
-    background: linear-gradient(
+    background: 
+      linear-gradient(
       to top left,
       rgba(0, 0, 0, 0.3),
       rgba(255, 255, 255, 0.3),
