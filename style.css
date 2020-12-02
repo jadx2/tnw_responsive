@@ -49,12 +49,51 @@ section {
   padding: 0 5px;
 }
 
+.bottom li {
+  margin-right: 10px;
+}
+
+.bottom-card li {
+  padding: 3px;
+  border-bottom: #aaa solid 1px;
+}
+
 .nav-top ul li {
   margin: 0 3px;
 }
 
 .nav-top a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-right a {
+  display: inline-block;
+  width: 100%;
+  border-left: 1px solid #eee;
+}
+
+.dropdown-content a {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+
+.heading a {
+  color: inherit;
+}
+
+.bottom-card li a {
+  padding-left: 5px;
+  color: #f76301;
+}
+
+[class*="footer"] li a {
+  color: #aaa;
+  margin: 8px;
+}
+
+.last-founding-card ul li a {
+  display: flex;
+  align-items: center;
 }
 
 .nav-top a:hover {
@@ -65,14 +104,16 @@ section {
   position: sticky;
   top: 0;
   line-height: 2;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
 .logo {
   display: block;
   background-color: #131313;
-  width: 60px;
   height: 100%;
   text-align: center;
+  width: 95px;
+  padding: 8px;
 }
 
 .logo img {
@@ -83,11 +124,6 @@ section {
 .dropdown {
   position: relative;
   display: inline-block;
-}
-
-.logo {
-  width: 95px;
-  padding: 8px;
 }
 
 .dropdown-content {
@@ -101,11 +137,6 @@ section {
   position: absolute;
   z-index: 1000;
   text-align: center;
-}
-
-.dropdown-content a {
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
 }
 
 .dropdown-content a:hover {
@@ -122,11 +153,6 @@ section {
 
 .nav-right {
   display: flex;
-}
-.nav-right a {
-  display: inline-block;
-  width: 100%;
-  border-left: 1px solid #eee;
 }
 
 .nav-right i {
@@ -150,7 +176,7 @@ main {
   padding: 8px;
 }
 
-/*Cover section*/
+/* Cover section */
 
 .cover {
   position: relative;
@@ -165,8 +191,7 @@ main {
   background: linear-gradient(
     to right bottom,
     rgba(247, 2, 2, 0),
-    rgb(255, 255, 255),
-    40%
+    rgba(255, 255, 255, 0.4)
   );
 }
 
@@ -232,10 +257,6 @@ main {
   justify-content: start;
 }
 
-.bottom li {
-  margin-right: 10px;
-}
-
 .small {
   font-size: 13px;
   color: #aaa;
@@ -247,20 +268,20 @@ main {
   line-height: 2.1;
 }
 
-.heading a {
-  color: inherit;
-}
-
 .news {
   display: flex;
 }
 
-.news :nth-child(2) :nth-child(1) {
-  margin-bottom: 5px;
-}
-
 .news :nth-child(2) {
   margin-left: 5px;
+}
+
+.last-founding-card ul :nth-child(2) {
+  padding-bottom: 7px;
+}
+
+.news :nth-child(2) :nth-child(1) {
+  margin-bottom: 5px;
 }
 
 .news-imgs img {
@@ -305,13 +326,10 @@ main {
   background-color: rgba(255, 102, 75, 0.05);
   padding: 12px;
 }
-.last-founding-card ul :nth-child(2) {
-  padding-bottom: 7px;
-}
 
-.last-founding-card ul li a {
-  display: flex;
-  align-items: center;
+.deals-card p,
+.deals-card h4 {
+  padding-left: 5px;
 }
 
 .last-founding-card ul li a p {
@@ -336,6 +354,10 @@ main {
   padding-top: 8px;
 }
 
+.bottom-footer img {
+  max-width: 40px;
+}
+
 .middle-card :nth-child(2) img {
   width: 100px;
   height: 100%;
@@ -345,30 +367,15 @@ main {
   padding-top: 5px;
 }
 
-.bottom-card li a {
-  padding-left: 5px;
-  color: #f76301;
-}
-
 .bottom-card li::before {
   content: ".";
   font-weight: 1000;
   color: #f76301;
 }
 
-.bottom-card li {
-  padding: 3px;
-  border-bottom: #aaa solid 1px;
-}
-
 .deals-card {
   padding-left: 5px;
   display: flex;
-}
-
-.deals-card p,
-.deals-card h4 {
-  padding-left: 5px;
 }
 
 .deals-card :nth-child(1) img {
@@ -384,11 +391,6 @@ main {
   font-weight: 500;
 }
 
-[class*="footer"] li a {
-  color: #aaa;
-  margin: 8px;
-}
-
 .top-foot {
   background-color: #131313;
   font-size: 10px;
@@ -401,12 +403,8 @@ main {
 }
 
 .bottom-footer {
-  background-color: #000000;
+  background-color: #000;
   text-align: center;
-}
-
-.bottom-footer img {
-  max-width: 40px;
 }
 
 /* Media Queries */
@@ -432,7 +430,7 @@ main {
     color: #aaa;
   }
 
-  .fa-bars {
+  .disapear {
     display: none;
   }
 
@@ -466,6 +464,8 @@ main {
   .deals-card {
     flex-direction: column;
     width: 32%;
+    margin-right: 8px;
+    margin-top: 10px;
   }
 
   .deals-card:nth-child(1) {
@@ -528,11 +528,6 @@ main {
 
   .deal {
     justify-content: flex-start;
-    margin-top: 10px;
-  }
-
-  .deals-card {
-    margin-right: 8px;
     margin-top: 10px;
   }
 
