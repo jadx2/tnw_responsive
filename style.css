@@ -70,6 +70,7 @@ section {
   display: inline-block;
   width: 100%;
   border-left: 1px solid #eee;
+  text-align: center;
 }
 
 .dropdown-content a {
@@ -105,6 +106,7 @@ section {
   top: 0;
   line-height: 2;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  height: 44px;
 }
 
 .logo {
@@ -151,8 +153,13 @@ section {
   display: none;
 }
 
+.nav-left {
+  float: left;
+}
+
 .nav-right {
-  display: flex;
+  float: right;
+  flex-wrap: nowrap;
 }
 
 .nav-right i {
