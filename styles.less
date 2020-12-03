@@ -371,3 +371,283 @@ main {
   	height: 70px;
 	}
 }
+
+/* Footer */
+
+[class*="footer"] {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  font-weight: 500;
+	color: @soft-white;
+
+	& a {
+		color: @soft-white;
+	}
+}
+
+.top-foot {
+  background-color: @black-background;
+  font-size: 10px;
+}
+
+.footer-social i {
+  background-color: #333;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.bottom-footer {
+  background-color: #000;
+  text-align: center;
+
+	& a {
+    width: 50px;
+    display: inline-block;
+
+		& img {
+			width: 100%;
+		}
+	}
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+	.nav-top {
+		display: block;
+		padding-left: 60px;
+
+		& .right {
+			display: none;
+		}
+	}
+
+  .middle-nav {
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+
+		& li {
+			margin-left: 5px;
+    	color: #aaa;
+		 }
+  }
+
+  .nav-right .fa-bars {
+    display: none;
+  }
+
+  .left {
+    justify-content: start;
+  }
+
+  .news {
+    flex-direction: column;
+    width: 33%;
+    padding: 8px;
+  }
+
+  .news-imgs {
+    height: 130px;
+
+		& img {
+			width: 100%;
+    	height: 100%;
+		 }
+  }
+	
+  .last-founding-card {
+    width: 31%;
+  }
+
+  .most-popular-card {
+    width: 48%;
+  }
+
+  .deals-card {
+    flex-direction: column;
+    width: 32%;
+    margin-right: 8px;
+    margin-top: 10px;
+
+		&:nth-child(1) {
+			height: 130px;
+		}
+
+		& :nth-child(1) img {
+			width: 100%;
+    	height: 130px;
+		}
+  }
+
+  .heading {
+    align-items: end;
+  }
+
+  .cover-section {
+    display: grid;
+    gap: 8px;
+    grid-template:
+      "a a c"
+      "a a b";
+
+		& .cover-1 {
+			grid-area: a;
+  		height: calc(100% - 8px);
+		}
+
+		& .cover-2 {
+			grid-area: c;
+
+			& h2 {
+				font-size: 20px;
+			}
+
+			& h6 {
+				font-size: 19px;
+			}
+		}	
+
+		& .cover-3 {
+			grid-area: b;
+
+			& h2 {
+				font-size: 20px;
+			}
+
+			& h6 {
+				font-size: 19px;
+			}
+		
+		}
+
+		& .cover-info {
+			& h2 {
+				font-size: 40px;
+			}
+
+			& h6 {
+				font-size: 20px;
+			}
+		}
+	}
+
+  .deal {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 95px;
+    padding: 8px;
+  }
+
+  .dropdown-content {
+    width: 95px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 969px) {
+  .nav-top {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .logo {
+    width: 95px;
+    padding: 8px;
+  }
+
+  .dropdown-content {
+    width: 95px;
+    padding: 8px;
+  }
+
+	.cover-section {
+
+		& .cover-1 {
+  	  height: calc(100% - 8px);
+  	}
+
+  	& .cover-2,
+  	& .cover-3 {
+  	  height: 292px;
+  	}
+
+  	& .cover-logo {
+  	  display: flex;
+  	}
+
+  	& .cover-logo img {
+  	  padding: 15px;
+  	  width: 55%;
+  	}
+
+  	& .gradient3 {
+			.gradient-position();
+  	  background:
+  	    linear-gradient(
+  	      to top left,
+  	      rgba(0, 0, 0, 0.3),
+  	      @soft-white,
+  	      rgba(255, 0, 0, 0.8)
+  	    );
+  	}
+
+		.cover-section .cover-1 {
+			& h2 {
+				font-size: 50px;
+			}
+
+			& h6 {
+				font-size: 25px;
+			}
+		}
+		.cover-section .cover-2 {
+			& h2 {
+				font-size: 30px;
+			}
+
+			& h6 {
+				font-size: 15px;
+			}
+		}
+
+		.cover-section .cover-3 {
+			& h2 {
+				font-size: 30px;
+			}
+
+			& h6 {
+				font-size: 15px;
+			}
+		}
+  }
+	
+  .news {
+    width: 25%;
+  }
+
+  .deals-card {
+    width: 23%;
+  }
+
+  .last-founding .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .most-popular-card {
+    width: 31%;
+    margin-bottom: 20px;
+  }
+
+  .deal {
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}
+
