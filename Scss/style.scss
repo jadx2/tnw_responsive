@@ -8,12 +8,15 @@ $tablet_width: 769px;
 
 nav {
   background-color: rgb(48, 47, 47);
+
   li {
     color: rgb(255, 255, 255);
+
     a {
       color: whitesmoke;
     }
   }
+
   @media screen and (min-width: $tablet_width) {
     .nav-left .dropdown {
       display: none;
