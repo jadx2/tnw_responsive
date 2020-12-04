@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../Scss/style.scss"
+	],
+	"sourcesContent": [
+		"$tablet_width : 769px;\r\n\r\n@mixin Bolded ($color, $weight, $size){\r\n    color: $color;\r\n    font-size: $weight;\r\n    font-weight: $size +px;\r\n}\r\n\r\nnav {\r\n    background-color: rgb(48, 47, 47);\r\n    li {\r\n        color: rgb(255, 255, 255);\r\n        a {\r\n            color: whitesmoke;\r\n        }\r\n    } \r\n    @media screen and (min-width: $tablet_width){\r\n        .nav-left .dropdown {\r\n            display: none;\r\n        }\r\n    }\r\n}\r\n\r\n.heading {\r\n    @include Bolded(darkblue, 20, 1000)\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAQA,AAAA,GAAG,CAAC;EACA,gBAAgB,EAAE,OAAe;CAYpC;;;AAbD,AAEI,GAFD,CAEC,EAAE,CAAC;EACC,KAAK,EAAE,KAAkB;CAI5B;;;AAPL,AAIQ,GAJL,CAEC,EAAE,CAEE,CAAC,CAAC;EACE,KAAK,EAAE,UAAU;CACpB;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;;EARvC,AASQ,GATL,CASK,SAAS,CAAC,SAAS,CAAC;IAChB,OAAO,EAAE,IAAI;GAChB;;;;AAIT,AAAA,QAAQ,CAAC;EApBL,KAAK,EAqBW,QAAQ;EApBxB,SAAS,EAoBiB,EAAE;EAnB5B,WAAW,EAAE,MAAS;CAoBzB"
+}

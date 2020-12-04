@@ -1,0 +1,26 @@
+$tablet_width : 769px;
+
+@mixin Bolded ($color, $weight, $size){
+    color: $color;
+    font-size: $weight;
+    font-weight: $size +px;
+}
+
+nav {
+    background-color: rgb(48, 47, 47);
+    li {
+        color: rgb(255, 255, 255);
+        a {
+            color: whitesmoke;
+        }
+    } 
+    @media screen and (min-width: $tablet_width){
+        .nav-left .dropdown {
+            display: none;
+        }
+    }
+}
+
+.heading {
+    @include Bolded(darkblue, 20, 1000)
+}

@@ -1,0 +1,30 @@
+/* line 9, ../../Documents/GitHub/NW/tnw_responsive/Scss/style.scss */
+nav {
+  background-color: #302f2f;
+}
+
+/* line 11, ../../Documents/GitHub/NW/tnw_responsive/Scss/style.scss */
+nav li {
+  color: white;
+}
+
+/* line 13, ../../Documents/GitHub/NW/tnw_responsive/Scss/style.scss */
+nav li a {
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 18, ../../Documents/GitHub/NW/tnw_responsive/Scss/style.scss */
+  nav .nav-left .dropdown {
+    display: none;
+  }
+}
+
+/* line 24, ../../Documents/GitHub/NW/tnw_responsive/Scss/style.scss */
+.heading {
+  color: darkblue;
+  font-size: 20;
+  font-weight: 1000px;
+}
+
+/*# sourceMappingURL=style.css.map */
