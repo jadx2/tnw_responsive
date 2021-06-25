@@ -17,7 +17,7 @@ Built with CSS responsive techniques as "Flex, Grid, MediaQueries"
 
 ## Live Demo
 
-[Live Demo Link](https://jaimdedan.github.io/tnw_responsive/)
+[Live Demo Link](https://jadx2.github.io/tnw_responsive/)
 
 ## Authors
 
